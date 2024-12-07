@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celender</title>
+    <link rel="stylesheet" href="project-celender.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="life">
+            <div class="month">
+                <i class="fa-solid fa-angle-right"></i>
+                <div class="date">December 2024</div>
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="week-days">
+                <div>MON</div>
+                <div>TUE</div>
+                <div>WED</div>
+                <div>THU</div>
+                <div>FRI</div>
+                <div>SAT</div>
+                <div>SUN</div>
+            </div>
+            <div class="days"></div>
+            <div class="lift-footer">
+                <div class="go-to"> <input type="text" placeholder="dd/mm/yy" class="go-to-btn">
+                    <button class="go-to-btn">GO</button>
+                </div>
+                <button class="today-btn">today</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="current-date">
+                <div class="event-day">sun</div>
+                <div class="event-date"> 1st December 2024</div>
+
+            </div>
+            <div class="events"></div>
+            <div class="event-wraper">
+                <div class="event-wraper-header">
+                    <div class="event-title"></div>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="event-body">
+                    <input type="text" placeholder="event name" class="event-body-npt">
+                    <input type="text" placeholder="event today from" class="event-body-npt">
+                    <input type="text" placeholder="event time to" class="event-body-npt">
+                </div>
+                <div class="event-footer">
+                    <button class="add-event-btn">add event</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="uplode-events"></div>
+    </div>
+    <script src="project-celender.js"></script>
+</body>
+
+</html>
